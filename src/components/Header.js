@@ -7,17 +7,17 @@ export default function Header(props) {
     <header className="header">
       <div className="container">
         <h1 className="logo">
-          <a href="#">{props.title}</a>
+          <a href="/">{props.title}</a>
         </h1>
         <nav className="navbar">
           <ul>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/" className="nav-link">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/" className="nav-link">
                 About
               </a>
             </li>
