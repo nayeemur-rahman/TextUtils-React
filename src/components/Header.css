@@ -1,0 +1,48 @@
+.light-theme .header {
+  background-color: var(--gray-300);
+  color: var(--gray-700);
+}
+.light-theme .header a:hover,
+.light-theme #theme-toggler:hover {
+  color: var(--gray-900);
+}
+.dark-theme .header {
+  background-color: var(--gray-800);
+  color: var(--gray-500);
+}
+.dark-theme .header a:hover,
+.dark-theme #theme-toggler:hover {
+  color: var(--gray-100);
+}
+
+.header {
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 150ms ease-in-out;
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-link {
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+#theme-toggler {
+  background-color: transparent;
+  color: inherit;
+  font-size: 2rem;
+  transition: color 150ms ease-in-out;
+}
