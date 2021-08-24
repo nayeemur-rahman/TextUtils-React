@@ -12,26 +12,25 @@ export default function TextForm() {
           onChange={(event) => {
             setText(event.target.value);
           }}
-          cols="100"
-          rows="10"
           placeholder="Enter your text..."
+          rows={12}
         ></textarea>
         <div className="actions">
-          <button
+          <button disabled={!text}
             onClick={() => {
               setText(text.toUpperCase());
             }}
           >
             Convert to Upper Case
           </button>
-          <button
+          <button disabled={!text}
             onClick={() => {
               setText(text.toLowerCase());
             }}
           >
             Convert to Lower Case
           </button>
-          <button
+          <button disabled={!text}
             onClick={() => {
               setText(
                 text
@@ -43,14 +42,14 @@ export default function TextForm() {
           >
             Remove Extra Spaces
           </button>
-          <button
+          <button disabled={!text}
             onClick={() => {
               setText('');
             }}
           >
             Clear Text
           </button>
-          <button
+          <button disabled={!text}
             onClick={() => {
               navigator.clipboard.writeText(text);
             }}

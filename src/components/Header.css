@@ -1,4 +1,5 @@
 .header {
+  padding: 0.75rem;
   transition-property: color, background-color;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
@@ -22,7 +23,7 @@
 
 .header .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 header a {
@@ -43,8 +44,16 @@ header a {
   user-select: none;
 }
 #theme-toggler {
+  padding: 0.25rem;
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
   background-color: transparent;
   color: inherit;
-  font-size: 2rem;
   transition: color 150ms ease-in-out;
+}
+@media screen and (max-width: 420px) {
+  .header .nav-link:nth-child(1){
+    display: none;
+  }
 }

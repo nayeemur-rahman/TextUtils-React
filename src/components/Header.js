@@ -23,8 +23,8 @@ export default function Header(props) {
             </li>
           </ul>
         </nav>
-        <button id="theme-toggler" onClick={props.toggleTheme}>
-          {props.theme === 'dark-theme' ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>}
+        <button id="theme-toggler" title={`Turn on ${props.theme === 'dark-theme' ? 'light' : 'dark'} mode`} onClick={props.toggleTheme}>
+          <i class={`fas fa-${props.theme === 'dark-theme' ? 'sun' : 'moon'}`}></i>
         </button>
       </div>
     </header>
