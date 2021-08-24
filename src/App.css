@@ -8,9 +8,7 @@
 }
 .App {
   min-height: 100vh;
-  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
-}
-.container {
-  margin: auto;
-  width: 75%;
+  transition-property: color, background-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
 }
