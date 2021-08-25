@@ -1,0 +1,34 @@
+.dark-theme .alert {
+  background-color: #0f5132;
+  color: #d1e7dd;
+}
+.light-theme .alert {
+  color: #0f5132;
+  background-color: #d1e7dd;
+}
+.alert {
+  font-size: 1.3rem;
+  border: 1px solid #badbcc;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: alert 0.5s cubic-bezier(0, 0, 0.1, 1) 2 alternate backwards;
+}
+@keyframes alert {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
